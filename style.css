@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+}
+
+/* HEADER */
+.header {
+  background: #1f4e79;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  z-index: 1000; /* pastikan selalu di atas map */
+}
+
+/* DESKRIPSI */
+.desc {
+  padding: 10px 20px;
+  background: white;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 1000;
+}
+
+/* MAP CONTAINER */
+#map-container {
+  position: relative;
+}
+
+/* MAP */
+#map {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* LEGENDA */
+.legend {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  background: white;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+/* KOMPAS */
+.north {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 70px;
+  z-index: 999;
+}

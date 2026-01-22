@@ -1,0 +1,104 @@
+<!-- 24611044 | Pratama Adi Saputro -->
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebGIS Persebaran SPBU DIY</title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <h1>WebGIS Persebaran SPBU</h1>
+      <p>Provinsi Daerah Istimewa Yogyakarta</p>
+    </div>
+
+    <!-- DESKRIPSI -->
+    <div class="desc">
+      Peta ini menampilkan persebaran 25 lokasi SPBU di Provinsi Daerah Istimewa
+      Yogyakarta. Setiap titik dapat diklik untuk menampilkan nama fasilitas dan
+      alamat.
+    </div>
+
+    <!-- MAP -->
+    <div id="map-container">
+      <div id="map"></div>
+
+      <!-- LEGENDA -->
+      <div class="legend">
+        <b>Legenda</b><br />
+        ⛽ Lokasi SPBU
+      </div>
+
+      <!-- KOMPAS -->
+      <img src="north.png" class="north" />
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script>
+      // Inisialisasi peta
+      var map = L.map("map").setView([-7.8, 110.37], 10);
+
+      // Basemap + Atribusi
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "Pratama Adi.S – 24611044",
+      }).addTo(map);
+
+      // Skala
+      L.control.scale().addTo(map);
+
+      // Icon SPBU
+      var iconSPBU = L.icon({
+        iconUrl: "icon_spbu.png",
+        iconSize: [30, 30],
+      });
+
+      // Titik SPBU
+      fetch("spbu.geojson")
+        .then((res) => res.json())
+        .then((data) => {
+          L.geoJSON(data, {
+            pointToLayer: function (feature, latlng) {
+              return L.marker(latlng, { icon: iconSPBU });
+            },
+            onEachFeature: function (feature, layer) {
+              var popup = `
+              <b>${feature.properties["Nama SPBU"]}</b><br>
+              ${feature.properties["Alamat"]}
+            `;
+              layer.bindPopup(popup);
+            },
+          }).addTo(map);
+        });
+
+      // Batas wilayah
+      function randomColor() {
+        return "#" + Math.floor(Math.random() * 16777215).toString(16);
+      }
+
+      fetch("batas.geojson")
+        .then((res) => res.json())
+        .then((data) => {
+          L.geoJSON(data, {
+            style: function (feature) {
+              return {
+                color: "#333",
+                weight: 1,
+                fillColor: randomColor(),
+                fillOpacity: 0.5,
+              };
+            },
+            onEachFeature: function (feature, layer) {
+              layer.bindPopup(feature.properties.kab_kota);
+            },
+          }).addTo(map);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+{
+"type": "FeatureCollection",
+"name": "spbu",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Malioboro", "Alamat": "Jl. Malioboro, Yogyakarta", "Latitude": -7.7926, "Longitude": 110.3656 }, "geometry": { "type": "Point", "coordinates": [ 110.3656, -7.7926 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Tugu Jogja", "Alamat": "Jl. Margo Utomo, Yogyakarta", "Latitude": -7.7829, "Longitude": 110.3671 }, "geometry": { "type": "Point", "coordinates": [ 110.3671, -7.7829 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Kotabaru", "Alamat": "Jl. Jend. Sudirman, Yogyakarta", "Latitude": -7.7894, "Longitude": 110.3728 }, "geometry": { "type": "Point", "coordinates": [ 110.3728, -7.7894 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Gejayan", "Alamat": "Jl. Affandi, Sleman", "Latitude": -7.7761, "Longitude": 110.3894 }, "geometry": { "type": "Point", "coordinates": [ 110.3894, -7.7761 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Condongcatur", "Alamat": "Jl. Ring Road Utara, Sleman", "Latitude": -7.7573, "Longitude": 110.4036 }, "geometry": { "type": "Point", "coordinates": [ 110.4036, -7.7573 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Kaliurang", "Alamat": "Jl. Kaliurang Km 8, Sleman", "Latitude": -7.7475, "Longitude": 110.3749 }, "geometry": { "type": "Point", "coordinates": [ 110.3749, -7.7475 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Godean", "Alamat": "Jl. Godean, Sleman", "Latitude": -7.7813, "Longitude": 110.3256 }, "geometry": { "type": "Point", "coordinates": [ 110.3256, -7.7813 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Mlati", "Alamat": "Jl. Magelang Km 7, Sleman", "Latitude": -7.7489, "Longitude": 110.3497 }, "geometry": { "type": "Point", "coordinates": [ 110.3497, -7.7489 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Depok", "Alamat": "Jl. Laksda Adisucipto, Sleman", "Latitude": -7.7819, "Longitude": 110.4162 }, "geometry": { "type": "Point", "coordinates": [ 110.4162, -7.7819 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Ngaglik", "Alamat": "Jl. Palagan Tentara Pelajar, Sleman", "Latitude": -7.7402, "Longitude": 110.3681 }, "geometry": { "type": "Point", "coordinates": [ 110.3681, -7.7402 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Wates", "Alamat": "Jl. Bhayangkara, Kulon Progo", "Latitude": -7.8573, "Longitude": 110.1594 }, "geometry": { "type": "Point", "coordinates": [ 110.1594, -7.8573 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Sentolo", "Alamat": "Jl. Wates-Jogja, Kulon Progo", "Latitude": -7.8216, "Longitude": 110.2184 }, "geometry": { "type": "Point", "coordinates": [ 110.2184, -7.8216 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Temon", "Alamat": "Jl. Wates-Purworejo, Kulon Progo", "Latitude": -7.9002, "Longitude": 110.0571 }, "geometry": { "type": "Point", "coordinates": [ 110.0571, -7.9002 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Pengasih", "Alamat": "Jl. KRT Kertodiningrat, Kulon Progo", "Latitude": -7.8401, "Longitude": 110.1472 }, "geometry": { "type": "Point", "coordinates": [ 110.1472, -7.8401 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Nanggulan", "Alamat": "Jl. Nanggulan, Kulon Progo", "Latitude": -7.7814, "Longitude": 110.2217 }, "geometry": { "type": "Point", "coordinates": [ 110.2217, -7.7814 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Bantul Kota", "Alamat": "Jl. Jend. Sudirman, Bantul", "Latitude": -7.8872, "Longitude": 110.3335 }, "geometry": { "type": "Point", "coordinates": [ 110.3335, -7.8872 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Sewon", "Alamat": "Jl. Parangtritis, Bantul", "Latitude": -7.8449, "Longitude": 110.3476 }, "geometry": { "type": "Point", "coordinates": [ 110.3476, -7.8449 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Jetis", "Alamat": "Jl. Imogiri Barat, Bantul", "Latitude": -7.9164, "Longitude": 110.3261 }, "geometry": { "type": "Point", "coordinates": [ 110.3261, -7.9164 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Pleret", "Alamat": "Jl. Imogiri Timur, Bantul", "Latitude": -7.8865, "Longitude": 110.3752 }, "geometry": { "type": "Point", "coordinates": [ 110.3752, -7.8865 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Kasihan", "Alamat": "Jl. Bibis, Bantul", "Latitude": -7.8032, "Longitude": 110.3305 }, "geometry": { "type": "Point", "coordinates": [ 110.3305, -7.8032 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Wonosari", "Alamat": "Jl. Brigjen Katamso, Gunungkidul", "Latitude": -7.9651, "Longitude": 110.6023 }, "geometry": { "type": "Point", "coordinates": [ 110.6023, -7.9651 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Playen", "Alamat": "Jl. Wonosari-Yogya, Gunungkidul", "Latitude": -7.9493, "Longitude": 110.5406 }, "geometry": { "type": "Point", "coordinates": [ 110.5406, -7.9493 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Semin", "Alamat": "Jl. Semin, Gunungkidul", "Latitude": -7.9074, "Longitude": 110.7145 }, "geometry": { "type": "Point", "coordinates": [ 110.7145, -7.9074 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Karangmojo", "Alamat": "Jl. Karangmojo, Gunungkidul", "Latitude": -7.9276, "Longitude": 110.5821 }, "geometry": { "type": "Point", "coordinates": [ 110.5821, -7.9276 ] } },
+{ "type": "Feature", "properties": { "Nama SPBU": "SPBU Tepus", "Alamat": "Jl. Pantai Selatan, Gunungkidul", "Latitude": -8.0992, "Longitude": 110.5147 }, "geometry": { "type": "Point", "coordinates": [ 110.5147, -8.0992 ] } }
+]
+}
